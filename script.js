@@ -5,8 +5,8 @@ let resultAll = document.getElementById("resultAll")
 
 function getNumber() {
     return {
-        a: Number(firstNum.value),
-        b: Number(secondNum.value)
+        a: parseFloat(firstNum.value),
+        b: parseFloat(secondNum.value)
     }
 }
 
@@ -15,6 +15,7 @@ function plus() {
     let result = nums.a + nums.b
 
     resultAll.innerText = result
+    console.log(result)
 }
 
 function minus() {
@@ -22,6 +23,7 @@ function minus() {
     let result = nums.a - nums.b
 
     resultAll.innerText = result
+    console.log(result)
 }
 
 function multiplication() {
@@ -29,6 +31,7 @@ function multiplication() {
     let result = nums.a * nums.b
 
     resultAll.innerText = result
+    console.log(result)
 }
 
 function divisity() {
@@ -38,6 +41,24 @@ function divisity() {
         resultAll.innerText = "0 нельзя"
     }
     else {
-    resultAll.innerText = result
+        resultAll.innerText = result
     }
+    console.log(result)
 }
+function procent() {
+
+    let nums = getNumber()
+    let result = nums.a % nums.b
+
+    resultAll.innerText = result
+    console.log(result)
+}
+
+function stepen() {
+    let nums = getNumber()
+    let result  = nums.a ** nums.b
+
+    resultAll.innerText =  result
+    console.log(result)
+}
+

@@ -12,3 +12,32 @@ header {
     align-items: center;
 
 }
+
+
+.inputButtons {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsOperators {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    width: 200px;
+}
+
+button {
+    width: 30px;
+}
+
+input {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
